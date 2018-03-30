@@ -21,8 +21,8 @@ const acquisition = {
   RELICS: 'Relics',
   SPY_MISSIONS: 'Spy Missions',
   STALKER: 'Stalker',
-  THE_QUILLS: 'The Quills (Cetus)',
   TENNO_LAB: 'Tenno Lab (Dojo)',
+  THE_QUILLS: 'The Quills (Cetus)',
   UNOBTAINABLE: 'Unobtainable',
   VAULTED: 'Vaulted',
 };
@@ -68,11 +68,11 @@ const acquisitionEnemies = {
   PHORID: 'Phorid (Boss)',
   SARGAS_RUK: 'General Sargas Ruk (Boss)',
   THE_RAPTORS: 'The Raptors (Boss)',
-  TYL_REGOR: 'Tyl Regor (Boss)',
   THE_SERGEANT: 'The Sergeant (Boss)',
-  VOR_AND_KRILL: 'Captain Vor and Lieutenant Lech Kril (Boss Duo)',
+  TYL_REGOR: 'Tyl Regor (Boss)',
   VAY_HEK: 'Councilor Vay Hek (Boss)',
   VOR: 'Captain Vor (Boss)',
+  VOR_AND_KRILL: 'Captain Vor and Lieutenant Lech Kril (Boss Duo)',
 };
 
 const primaryCategory = {
@@ -122,15 +122,37 @@ const itemType = {
   ARCHWING: 'Archwing',
   ARCHWING_GUN: 'Archwing Gun',
   ARCHWING_MELEE: 'Archwing Melee',
-  COMPANION_SENTINEL: 'Sentinel',
-  COMPANION_KUBROW: 'Kubrow',
   COMPANION_KAVAT: 'Kavat',
+  COMPANION_KUBROW: 'Kubrow',
+  COMPANION_SENTINEL: 'Sentinel',
   SENTINEL_WEAPON: 'Sentinel Weapon',
   WARFRAME: 'Warframe',
+  WEAPON_MELEE: 'Melee Weapon',
   WEAPON_PRIMARY: 'Primary Weapon',
   WEAPON_SECONDARY: 'Secondary Weapon',
-  WEAPON_MELEE: 'Melee Weapon',
   ZAW: 'Zaw',
+};
+
+// FIXME: Planet isn't 100% accurate (the void isn't a planet), need a better name
+const planet = {
+  CERES: 'Ceres',
+  DERELICT: 'Derelict',
+  EARTH: 'Earth',
+  ERIS: 'Eris',
+  EUROPA: 'Europa',
+  JUPITER: 'Jupiter',
+  KUVA_FORTRESS: 'Kuva Fortress',
+  LUA: 'Lua',
+  MARS: 'Mars',
+  MERCURY: 'Mercury',
+  NEPTUNE: 'Neptune',
+  PHOBOS: 'Phobos',
+  PLUTO: 'Pluto',
+  SATURN: 'Saturn',
+  SEDNA: 'Sedna',
+  URANUS: 'Uranus',
+  VENUS: 'Venus',
+  VOID: 'Void',
 };
 
 module.exports = {
@@ -142,4 +164,5 @@ module.exports = {
   secondaryCategory,
   meleeCategory,
   itemType,
+  planet,
 };
